@@ -1,9 +1,13 @@
 public class Cylinder {
     public static double getVolume(int radius, int height){
-        double baseArea = Math.PI * radius * radius;
+        double baseArea = getBaseArea(radius);
         double perimeter = getPerimeter(radius);
         double volume = perimeter * height + 2 * baseArea;
         return volume;
+    }
+
+    private static double getBaseArea(int radius) {
+        return Math.PI * radius * radius;
     }
 
     public static double getPerimeter(int radius) {
