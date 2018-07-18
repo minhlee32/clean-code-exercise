@@ -5,4 +5,8 @@ public class Cylinder {
         double volume = perimeter * height + 2 * baseArea;
         return volume;
     }
+
+    public static double getPerimeter(int radius) {
+        return 2 * Math.PI*radius;
+    }
 }
