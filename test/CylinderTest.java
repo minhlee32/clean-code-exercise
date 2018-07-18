@@ -26,4 +26,16 @@ class CylinderTest {
         double result = Cylinder.getVolume(radius, height);
         assertEquals(expected, result);
     }
+
+    @Test
+    @DisplayName("Testing getVolume(2, 3)")
+    void testGetVolume2And3() {
+        int radius = 2;
+        int height = 3;
+        double expected = 62.83185307179586;
+
+        double result = Cylinder.getVolume(radius, height);
+        assertEquals(expected, result);
+    }
 }
+
